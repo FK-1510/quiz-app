@@ -1,70 +1,79 @@
-/* 全体を中央寄せ */
-body {
-  background: linear-gradient(to right, #f0f9ff, #cbf0ff);
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  padding: 20px;
+* {
   margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* 名前入力フォーム */
-#name-container input {
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 5px;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+header {
+  background-color: #0275d8;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.logo {
+  width: 100px;
   margin-bottom: 10px;
 }
 
-#name-container button {
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  background: #a06cd5;
-  color: white;
-  border: none;
+#game-container {
+  margin-top: 30px;
 }
 
-/* クイズ本体 */
-#quiz-container, #summary {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 90%;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.quiz-image {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 20px;
-  border: 5px solid #a06cd5;
-  margin: 0 auto 20px auto;
-  display: block;
-}
-
-/* ボタン */
-button {
-  padding: 10px 20px;
-  border: none;
-  background: #a06cd5;
-  color: white;
-  font-size: 16px;
+#quiz-container {
+  background-color: white;
   border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
 }
 
-button:hover {
-  background: #cdb4db;
-  transform: scale(1.05);
+.student-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#answer-input {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  width: 200px;
+}
+
+#next-btn {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#next-btn:hover {
+  background-color: #4cae4c;
+}
+
+#timer {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+#end-container {
+  background-color: #d9534f;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
 }
