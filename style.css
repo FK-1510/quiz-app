@@ -1,0 +1,70 @@
+/* 全体を中央寄せ */
+body {
+  background: linear-gradient(to right, #f0f9ff, #cbf0ff);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* 名前入力フォーム */
+#name-container input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#name-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #a06cd5;
+  color: white;
+  border: none;
+}
+
+/* クイズ本体 */
+#quiz-container, #summary {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.quiz-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 5px solid #a06cd5;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+/* ボタン */
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #a06cd5;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #cdb4db;
+  transform: scale(1.05);
+}
